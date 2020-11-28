@@ -93,7 +93,7 @@ body {
 }
 
 .testimony__headline {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .user__img {
@@ -116,6 +116,10 @@ body {
 
 .daniel {
   background-color: #7541c8;
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+  background-size: 12rem;
   grid-column: center-start / col-end 4;
 }
 

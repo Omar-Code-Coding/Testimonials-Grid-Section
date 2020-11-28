@@ -8,7 +8,7 @@
     border-radius: .8rem;
 
     &__headline {
-        margin: 2rem 0;
+        margin: 1.5rem 0;
     }
 }
 
@@ -38,6 +38,11 @@
 /////////////TESTIMONIES BOXES/////////////////////
 .daniel {
     background-color: $color-primary-1;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+    background-size: 12rem;
+
     grid-column: center-start / col-end 4;
 
     @media screen and (max-width: 48em){
