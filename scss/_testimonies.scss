@@ -1,0 +1,88 @@
+.testimony {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1;
+    align-items: center;
+
+    padding: 3rem;
+    border-radius: .8rem;
+
+    &__headline {
+        margin: 2rem 0;
+    }
+}
+
+/////////////////////////////////////////////////////
+////////USER NAME & TAG BOX/////////////////////////
+.user {
+    &__img {
+        border-radius: 50%;
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    &__item {
+        margin-left: 1.7rem;
+    }
+
+    &--daniel {
+        border: .2rem solid $color-secondary-1;
+    }
+
+    &--patrick {
+        border: .2rem solid $color-primary-2;
+    }
+}
+
+////////////////////////////////////////////////////
+/////////////TESTIMONIES BOXES/////////////////////
+.daniel {
+    background-color: $color-primary-1;
+    grid-column: center-start / col-end 4;
+
+    @media screen and (max-width: 48em){
+        grid-column: center-start / center-end;
+        grid-row: 1 / 2;   
+    }
+}
+
+.jonathan {
+    background-color: $color-primary-2;
+    grid-column: col-start 5 / col-end 6;
+
+    @media (max-width: 48em){
+        grid-column: center-start / center-end;
+        grid-row: 2 / 3 ;   
+    }
+}
+
+.jeanette {
+    background-color: white;
+    grid-column: center-start / col-end 2;
+
+    @media (max-width: 48em){
+        grid-column: center-start / center-end;
+        grid-row: 3 / 4;   
+    }
+}
+
+.patrick {
+    background-color: $color-primary-3;
+    grid-column: col-start 3 / col-end 6;
+
+    @media (max-width: 48em){
+        grid-column: center-start / center-end;
+        grid-row: 4 / 5;   
+    }
+}
+
+.kira {
+    background-color: white;
+    grid-column: col-start 7 / center-end;
+    grid-row: 1 / span 2;
+
+    @media (max-width: 48em){
+        grid-column: center-start / center-end;
+        grid-row:  5 / 6;   
+    }
+}
